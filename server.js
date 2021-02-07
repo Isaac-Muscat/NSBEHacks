@@ -5,6 +5,8 @@ const ejs = require('ejs');
 
 const app = express();
 
+const port = process.env.PORT || 8080;
+app.listen(port);
 
 app.use(express.static('public'));
 app.use(express.json({limit: '1mb'}));
@@ -31,5 +33,4 @@ app.get('/hospitals', function(request,  response){
 });
 
 
-app.listen(8080);
 
