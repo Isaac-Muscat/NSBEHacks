@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <script src="lib/p5.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Medical Info</h1>
+        <p>
+        	Input the medical condition you have: 
+        	<input id="medicalcondition"></input>
+        	<button id="submit">Submit</button>
+        	
+
+        </p>
+    </div>
+    <div class="jumbotron">
+        <ul id="list">
+            <li><h2>Cold</h2>
+                <p>
+                    sneezing, coughing
+                </p>
+            </li>
+        </ul>
+        
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
